@@ -3,136 +3,92 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>صالون النجمة السادسة | Sixth Star Barbershop</title>
-  <link rel="stylesheet" href="css/app.css">
+  <title>النجمة السادسة | Sixth Star Barbershop</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/dark-mode.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 <body>
-  <header class="topbar">
-    <a class="brand" href="index.html" aria-label="Sixth Star Barbershop">
-      <img src="assets/logo.svg" alt="">
-      <span>
-        <strong data-ar="النجمة السادسة" data-en="Sixth Star">النجمة السادسة</strong>
-        <small>Sixth Star Barbershop</small>
-      </span>
-    </a>
-
-    <nav class="nav" data-nav>
-      <a href="#home" data-ar="الرئيسية" data-en="Home">الرئيسية</a>
-      <a href="#services" data-ar="الخدمات" data-en="Services">الخدمات</a>
-      <a href="#offers" data-ar="العروض" data-en="Offers">العروض</a>
-      <a href="#gallery" data-ar="الأعمال" data-en="Work">الأعمال</a>
-      <a href="#booking" data-ar="الحجز" data-en="Booking">الحجز</a>
-      <a href="#contact" data-ar="تواصل" data-en="Contact">تواصل</a>
-    </nav>
-
-    <div class="actions">
-      <button class="ghost" data-lang>EN</button>
-      <button class="ghost" data-theme>Dark</button>
-      <a class="book" href="#booking" data-ar="احجز الآن" data-en="Book Now">احجز الآن</a>
-      <button class="menu" data-menu aria-label="القائمة"><span></span><span></span><span></span></button>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html"><span class="brand-mark">★</span><span><strong>النجمة السادسة</strong><small>Sixth Star Barbershop</small></span></a>
+      <nav class="nav-links" data-nav>
+        <a href="index.html" data-i18n="home">الرئيسية</a>
+        <a href="services.html" data-i18n="services">الخدمات</a>
+        <a href="booking.html" data-i18n="booking">الحجز</a>
+        <a href="#offers" data-i18n="offers">العروض</a>
+        <a href="contact.html" data-i18n="contact">التواصل</a>
+        <a href="login.html" data-i18n="login">تسجيل الدخول</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="social-dot" href="https://wa.me/966500000000">WA</a>
+        <a class="social-dot" href="https://www.snapchat.com/">SC</a>
+        <button class="icon-btn" data-lang-toggle>EN</button>
+        <button class="icon-btn" data-theme-toggle>Dark</button>
+        <a class="btn" href="booking.html" data-i18n="book_now">احجز الآن</a>
+        <button class="menu-btn" data-menu><span></span><span></span><span></span></button>
+      </div>
     </div>
   </header>
 
-  <main id="home">
+  <main>
     <section class="hero">
-      <div class="hero-copy">
-        <p class="kicker">BLACK / GOLD / PRECISION</p>
-        <h1 data-ar="حلاقة فاخرة بتفاصيل تصنع حضورك" data-en="Premium grooming for a sharper presence">حلاقة فاخرة بتفاصيل تصنع حضورك</h1>
-        <p data-ar="صالون النجمة السادسة يقدم تجربة رجالية عصرية: قصات دقيقة، لحية مرتبة، حجز سريع، واهتمام واضح بكل لمسة." data-en="Sixth Star delivers modern men’s grooming: sharp cuts, refined beard work, quick booking, and detail-first service.">صالون النجمة السادسة يقدم تجربة رجالية عصرية: قصات دقيقة، لحية مرتبة، حجز سريع، واهتمام واضح بكل لمسة.</p>
-        <div class="hero-actions">
-          <a class="book" href="#booking" data-ar="احجز موعدك" data-en="Book Appointment">احجز موعدك</a>
-          <a class="outline" href="https://wa.me/966500000000">WhatsApp</a>
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">Premium Men Grooming</span>
+          <h1 data-i18n="hero_title">النجمة السادسة</h1>
+          <p data-i18n="hero_text">حلاقة فاخرة، قصات دقيقة، عناية راقية باللحية وتجربة حجز سهلة.</p>
+          <div class="hero-actions"><a class="btn" href="booking.html">احجز موعدك</a><a class="btn secondary" href="https://wa.me/966500000000?text=مرحباً، أرغب في حجز موعد في صالون النجمة السادسة.">واتساب</a></div>
+        </div>
+        <div class="hero-card">
+          <span class="eyebrow">Special Offer</span>
+          <h2>خصم 30% على باقة العريس</h2>
+          <p>مفاجآت أسبوعية وخدمة إضافية مجانية عند الحجز لأول زيارة.</p>
+          <a class="btn" href="booking.html">استفد من العرض</a>
         </div>
       </div>
-      <div class="hero-panel">
-        <span data-ar="عرض خاص" data-en="Special Offer">عرض خاص</span>
-        <h2 data-ar="خصم 20% على أول زيارة" data-en="20% off your first visit">خصم 20% على أول زيارة</h2>
-        <p data-ar="ابدأ تجربتك بعرض ترحيبي فاخر." data-en="Start with a premium welcome offer.">ابدأ تجربتك بعرض ترحيبي فاخر.</p>
+    </section>
+
+    <section class="section">
+      <div class="container banner" id="offers">
+        <div><span class="eyebrow">Offers</span><h2 data-i18n="offers_title">العروض والمفاجآت</h2><p>Weekly Surprises for Sixth Star Customers. Book now and get a free extra service.</p><a class="btn" href="booking.html">احجز الآن</a></div>
+        <div class="banner-visual">30%</div>
       </div>
     </section>
 
-    <section class="section split">
-      <div>
-        <p class="kicker">ABOUT</p>
-        <h2 data-ar="صالون رجالي بهوية فاخرة وتجربة سهلة" data-en="A luxury men’s salon with an effortless experience">صالون رجالي بهوية فاخرة وتجربة سهلة</h2>
-      </div>
-      <p data-ar="صممنا التجربة لتكون واضحة من أول ضغطة: تختار الخدمة، تحدد الحلاق، تعرف السعر والمدة، ثم تؤكد موعدك. لا ازدحام، لا تعقيد، فقط نتيجة مرتبة." data-en="The experience is designed to be clear from the first tap: choose a service, select a barber, see price and duration, then confirm. No clutter, just a polished result.">صممنا التجربة لتكون واضحة من أول ضغطة: تختار الخدمة، تحدد الحلاق، تعرف السعر والمدة، ثم تؤكد موعدك. لا ازدحام، لا تعقيد، فقط نتيجة مرتبة.</p>
-    </section>
-
-    <section class="section" id="services">
-      <div class="section-head">
-        <p class="kicker">SERVICES</p>
-        <h2 data-ar="الخدمات الأكثر طلبًا" data-en="Most requested services">الخدمات الأكثر طلبًا</h2>
-      </div>
-      <div class="cards" data-services></div>
-    </section>
-
-    <section class="section" id="offers">
-      <div class="ad-grid">
-        <article class="ad big">
-          <p class="kicker">GROOM PACKAGE</p>
-          <h2 data-ar="باقة العريس الفاخرة" data-en="Luxury Groom Package">باقة العريس الفاخرة</h2>
-          <p data-ar="شعر، لحية، عناية وتصفيف ليومك المميز." data-en="Hair, beard, care and styling for your special day.">شعر، لحية، عناية وتصفيف ليومك المميز.</p>
-          <a class="book" href="#booking" data-ar="احجز الباقة" data-en="Book Package">احجز الباقة</a>
-        </article>
-        <article class="ad">
-          <h3 data-ar="تهذيب اللحية" data-en="Beard Detail">تهذيب اللحية</h3>
-          <p data-ar="دقة في التفاصيل وأناقة في المظهر." data-en="Detail precision and a polished look.">دقة في التفاصيل وأناقة في المظهر.</p>
-        </article>
-        <article class="ad">
-          <h3 data-ar="عروض نهاية الأسبوع" data-en="Weekend Offers">عروض نهاية الأسبوع</h3>
-          <p data-ar="خدمات مختارة بأسعار مميزة." data-en="Selected services at special prices.">خدمات مختارة بأسعار مميزة.</p>
-        </article>
+    <section class="section">
+      <div class="container">
+        <div class="section-head"><span class="eyebrow">Services</span><h2 data-i18n="services_title">خدماتنا المميزة</h2><p>بطاقات خدمات واضحة مع السعر والمدة وزر حجز مباشر.</p></div>
+        <div class="grid grid-4" data-services data-limit="4"></div>
       </div>
     </section>
 
-    <section class="section" id="gallery">
-      <div class="section-head">
-        <p class="kicker">GALLERY</p>
-        <h2 data-ar="لمحات من التجربة" data-en="A look inside the experience">لمحات من التجربة</h2>
-      </div>
-      <div class="gallery">
-        <div>Luxury Chair</div><div>Sharp Fade</div><div>Beard Care</div><div>Groom Style</div>
+    <section class="section">
+      <div class="container grid grid-3">
+        <article class="card"><h3>نظافة وجودة</h3><p>تعقيم مستمر ومنتجات عناية مختارة.</p></article>
+        <article class="card"><h3>مواعيد دقيقة</h3><p>حجز واضح ومنع تكرار الموعد نفسه.</p></article>
+        <article class="card"><h3>هوية فاخرة</h3><p>أسود وذهبي وتجربة رجالية عصرية.</p></article>
       </div>
     </section>
 
-    <section class="section booking" id="booking">
-      <form data-booking-form>
-        <p class="kicker">BOOKING</p>
-        <h2 data-ar="احجز موعدك الآن" data-en="Book your appointment">احجز موعدك الآن</h2>
-        <div class="form-row">
-          <label><span data-ar="الخدمة" data-en="Service">الخدمة</span><select name="service" data-service-select></select></label>
-          <label><span data-ar="الحلاق" data-en="Barber">الحلاق</span><select name="barber"><option>أحمد</option><option>تركي</option><option>Faisal</option></select></label>
-        </div>
-        <div class="form-row">
-          <label><span data-ar="التاريخ" data-en="Date">التاريخ</span><input name="date" type="date" required></label>
-          <label><span data-ar="الوقت" data-en="Time">الوقت</span><input name="time" type="time" required></label>
-        </div>
-        <div class="form-row">
-          <label><span data-ar="الاسم" data-en="Name">الاسم</span><input name="name" required></label>
-          <label><span data-ar="الجوال" data-en="Phone">الجوال</span><input name="phone" required></label>
-        </div>
-        <button class="book" type="submit" data-ar="تأكيد الحجز" data-en="Confirm Booking">تأكيد الحجز</button>
-      </form>
-      <aside class="summary" data-summary></aside>
+    <section class="section">
+      <div class="container grid grid-3">
+        <article class="card"><strong>★★★★★</strong><p>خدمة راقية والتدرج مضبوط.</p><b>فهد الحربي</b></article>
+        <article class="card"><strong>★★★★★</strong><p>Clean place and sharp cut.</p><b>Nasser</b></article>
+        <article class="card"><strong>★★★★★</strong><p>باقة العريس ممتازة جدًا.</p><b>عبدالله</b></article>
+      </div>
     </section>
 
-    <section class="section contact" id="contact">
-      <div>
-        <p class="kicker">CONTACT</p>
-        <h2 data-ar="تواصل مع صالون النجمة السادسة" data-en="Contact Sixth Star Barbershop">تواصل مع صالون النجمة السادسة</h2>
-        <p>Riyadh, Saudi Arabia</p>
-        <p>966500000000 / hello@sixthstar.test</p>
+    <section class="section">
+      <div class="container">
+        <div class="section-head"><h2>موقع الصالون</h2><p>يمكن استبدال رابط الخريطة من داخل الكود.</p></div>
+        <iframe class="map" title="Google Maps" src="https://www.google.com/maps?q=Riyadh%20Saudi%20Arabia&output=embed"></iframe>
       </div>
-      <iframe title="Google Maps" src="https://www.google.com/maps?q=Riyadh%20Saudi%20Arabia&output=embed"></iframe>
     </section>
   </main>
 
-  <footer>
-    <strong>Sixth Star Barbershop</strong>
-    <span>© <span data-year></span></span>
-  </footer>
-
-  <script src="js/app.js"></script>
+  <a class="float-whatsapp" href="https://wa.me/966500000000?text=مرحباً، أرغب في حجز موعد في صالون النجمة السادسة.">WA</a>
+  <footer class="site-footer"><div class="container footer-grid"><div><h3>Sixth Star Barbershop</h3><p>صالون رجالي فاخر بتجربة حجز سهلة.</p></div><div><h3>روابط</h3><a href="services.html">الخدمات</a><br><a href="booking.html">الحجز</a></div><div><h3>الحساب</h3><a href="login.html">دخول</a><br><a href="register.html">تسجيل</a></div><div><h3>تواصل</h3><a href="contact.html">الموقع</a><br><a href="dashboard.html">لوحة التحكم</a></div></div><div class="container"><p>© <span data-year></span> Sixth Star.</p></div></footer>
+  <script src="assets/js/theme.js"></script><script src="assets/js/language.js"></script><script src="assets/js/main.js"></script>
 </body>
 </html>
